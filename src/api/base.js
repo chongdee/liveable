@@ -1,7 +1,8 @@
 const baseURL = "http://localhost:3003"
 const base = {
-  homehot1: baseURL+"/api/homehot1",
-  homehot2: baseURL+"/api/homehot2",
+  homehot1: baseURL + "/api/homehot1",
+  homehot2: baseURL + "/api/homehot2",
+  search: baseURL + "/api/search",
 };
 
 // const base = {

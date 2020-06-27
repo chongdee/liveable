@@ -1,5 +1,7 @@
 import homehot from "./homehot";
+import search from "./search";
 
-export default{
-  homehot
-}
+export default {
+  homehot,
+  search
+};

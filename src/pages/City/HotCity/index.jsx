@@ -1,10 +1,9 @@
 import React from "react";
 import "./style.less";
 
-export default class CityList extends React.Component {
+export default class HotCity extends React.Component {
   handleCity(cityName) {
-    console.log(cityName);
-    
+    this.props.handleCityName(cityName)
   }
 
   render() {
