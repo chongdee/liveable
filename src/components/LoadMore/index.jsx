@@ -42,6 +42,11 @@ export default class LoadMore extends React.Component{
         })  
     }
 
+    componentWillUnmount(){
+      // 取消滚动事件
+      window.onscroll = null
+    }
+
   render(){
     return(
       <div className='wrapper' ref = {this.load}>

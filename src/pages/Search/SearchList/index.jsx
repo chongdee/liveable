@@ -39,6 +39,13 @@ export default class SearchList extends React.Component {
     this.http(content);
     
   }
+
+  componentWillUnmount(){
+    // 防止请求网络慢的时候出现bug，所以清除
+    this.setState=(state, cb)=>{
+      return
+    }
+  }
   render() {
     return (
       <div>
