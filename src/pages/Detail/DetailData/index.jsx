@@ -1,6 +1,7 @@
 import React from "react";
 import api from "../../../api";
 import DetailView from "./DetailView";
+import CollectBuy from "./CollectBuy";
 
 
 export default class DetailData extends React.Component {
@@ -42,6 +43,8 @@ export default class DetailData extends React.Component {
         ) : (
           <div>数据加载中</div>
         )}
+        {/* 收藏购买组件 */}
+        <CollectBuy history={this.props.history} id={this.props.id}/>    
       </div>
     );
   }

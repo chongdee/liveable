@@ -6,7 +6,6 @@ export default class CommentView extends React.Component {
   render() {
     // 获取数据
     const data = this.props.comments;
-    console.log(data);
     
     return (
       <div className="comment-list">
