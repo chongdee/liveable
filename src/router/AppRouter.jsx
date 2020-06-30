@@ -11,6 +11,7 @@ import City from "../pages/City";
 import Search from "../pages/Search";
 import Detail from "../pages/Detail";
 import Login from "../pages/Login";
+import Cart from "../pages/Cart";
 
 /* 
   因为城市初始化需要数据，所以构建App 页面一加载初始化城市数据
@@ -29,6 +30,7 @@ export default class AppRouter extends React.Component{
             <Route path="/search/:content" component={Search}></Route>
             <Route path="/detail/:id" component={Detail}></Route>
             <Route path="/login" component={Login}></Route>
+            <Route path="/cart" component={Cart}></Route>
             <Route path="*" component={NotFound}></Route>
           </Switch>
         </App>

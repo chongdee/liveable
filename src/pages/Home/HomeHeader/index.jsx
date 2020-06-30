@@ -18,14 +18,17 @@ export default class HomeHeader extends React.Component {
 
           {/* 右 */}
           <div className="home-header-right float-right">
-            <i className="iconfont icon-car"></i>
+            {/* 购物车页面做是否登录判断 */}
+            <Link to='/cart'>
+              <i className="iconfont icon-car"></i>
+            </Link>
           </div>
 
           {/* 中 */}
           <div className="home-header-middle">
             <div className="search-container">
               <i className="icon-search"></i>
-              <SearchInput history={this.props.history}/>
+              <SearchInput history={this.props.history} />
             </div>
           </div>
         </div>

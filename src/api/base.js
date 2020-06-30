@@ -5,6 +5,8 @@ const base = {
   search: baseURL + "/api/search",
   detail: baseURL + "/api/detail",
   comment: baseURL + "/api/comment",
+  order: baseURL + "/api/cart", //购物车评论列表
+  ordercomment: "/api/ordercomment",
 };
 
 // const base = {

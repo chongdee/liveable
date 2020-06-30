@@ -1,6 +1,11 @@
 var express = require("express");
 var app = express();
 var router = require("./router.js");
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({
+  extended:true
+}))
 
 
 //解决跨域
